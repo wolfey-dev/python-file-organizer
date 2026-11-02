@@ -24,6 +24,9 @@ def organize(dir=None):
 
     dir = args.directory
 
+    if dir == "here":
+        dir = os.getcwd()
+        
     if os.path.isdir(dir): 
         list = os.listdir(dir) 
 
